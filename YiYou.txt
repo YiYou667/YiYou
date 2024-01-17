@@ -381,36 +381,36 @@ Tab:AddButton({
     end
 })  
 local Tab = Window:MakeTab({
-  Name = "死亡球111",
+  Name = "死亡球",
   Icon = "rbxassetid://7229442422",
   PremiumOnly = false
   })
 
 Tab:AddButton({
-	Name = "1",
+	Name = "死亡球（需要卡密）",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/DeathBall.lua"))()  
 end
 })
 
 local Tab = Window:MakeTab({
-	Name = "牛逼",
+	Name = "冲刺模拟器（领ugc饰品）",
 	Icon = "rbxassetid://7229442422",
 	PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "6",
+	Name = "冲刺脚本一",
 	Callback = function()
    
 getgenv().eom = "无"
-loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\68\122\120\115\81\82\68\85\39\41\41\40\41")()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Angeelvxg/PunchSimulator/main/PunchSimulator.lua",true))() 
     end
 })
 Tab:AddButton({
-	Name = "无",
+	Name = "冲刺脚本二",
 	Callback = function()
-loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\98\98\97\109\120\98\98\97\109\120\98\98\97\109\120\47\99\111\100\101\115\112\97\99\101\115\45\98\108\97\110\107\47\109\97\105\110\47\37\69\55\37\57\57\37\66\68\34\41\41\40\41")()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraScript/Script/main/Punch'))() 
     end
 })
 Tab:AddButton({
