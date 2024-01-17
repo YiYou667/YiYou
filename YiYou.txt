@@ -381,7 +381,7 @@ Tab:AddButton({
     end
 })  
 local Tab = Window:MakeTab({
-  Name = "死亡球",
+  Name = "死亡球111",
   Icon = "rbxassetid://7229442422",
   PremiumOnly = false
   })
@@ -394,7 +394,7 @@ end
 })
 
 local Tab = Window:MakeTab({
-	Name = "5",
+	Name = "牛逼",
 	Icon = "rbxassetid://7229442422",
 	PremiumOnly = false
 })
