@@ -387,7 +387,7 @@ local Tab = Window:MakeTab({
   })
 
 Tab:AddButton({
-	Name = "死亡球",
+	Name = "1",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/DeathBall.lua"))()  
 end
@@ -401,34 +401,34 @@ end
 })
 
 Tab:AddButton({
-	Name = "无",
+	Name = "2",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/master/legacy"))()
 end
 })
 
 Tab:AddButton({
-	Name = "无",
+	Name = "3",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/kinglegacy.lua"))()
 end
 })
 
 Tab:AddButton({
-	Name = "无",
+	Name = "4",
 	Callback = function()
 repeat wait() until game:IsLoaded()loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/Hyper/main/script.lua"))() 
 end
 })
 
 local Tab = Window:MakeTab({
-	Name = "无",
+	Name = "5",
 	Icon = "rbxassetid://7229442422",
 	PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "无",
+	Name = "6",
 	Callback = function()
    
 getgenv().eom = "无"
