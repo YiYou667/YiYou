@@ -413,30 +413,6 @@ Tab:AddButton({
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraScript/Script/main/Punch'))() 
     end
 })
-Tab:AddButton({
-	Name = "无",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/atoyayaya/jiaoben/main/jiamilist"))()
-end
-})
-Tab:AddButton({
-	Name = "无",
-	Callback = function()
-loadstring(game:HttpGet "https://pastebin.com/raw/bXApbsu8")()
-    end
-})
-Tab:AddButton({
-	Name = "无",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/UWU/main/Xiaos______________________________________________________________Yun__________________________________________________________________________betaV2.3------------------------------------------------------------------------------------jsjalololololololololololololololololololllololol.lua"))()
-    end
-})
-Tab:AddButton({
-  Name = "无",
-  Callback = function()
-    getgenv().USA="作者莫羽免费请勿倒卖"loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/beta/main/USA.lua"))()
-   end
-})local Tab = Window:MakeTab({
 	Name = "无",
 	Icon = "rbxassetid://7229442422",
 	PremiumOnly = false
