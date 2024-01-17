@@ -413,63 +413,6 @@ Tab:AddButton({
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraScript/Script/main/Punch'))() 
     end
 })
-	Name = "无",
-	Icon = "rbxassetid://7229442422",
-	PremiumOnly = false
-})
-Tab:AddButton({
-	Name = "无",	
-Callback = function()	loadstring(game:HttpGet("https://pastebin.com/raw/Lyy77rnr",true))()
-  	end
-})
-Tab:AddButton({
-	Name = "无",
-	Callback = function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Unknownkellymc1/Unknownscripts/main/slap-battles')))()
-    end
-})
-
-Tab:AddButton({
-	Name = "无",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/C6wNFT0r"))()
-end
-})
-
-Tab:AddButton({
-	Name = "无",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Frerfgzz/free-script/main/SMZHUBv2BETA"))()
-end
-})
-
-Tab:AddButton({
-	Name = "无",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/pHN96bvq"))()
-end
-})
-
-Tab:AddButton({
-	Name = "无",
-	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/harisiskandar178/Roblox-Script/main/Muscle%20Legend"))()
-  	end    
-})
-
-Tab:AddButton({
-	Name = "无",
-	Callback = function()
-loadstring(game:HttpGet("https://scriptblox.com/raw/UPDATE-The-Mimic-Instant-Finish-Nightmare-Normal-TWT-And-Halloween-Trials-6497"))()
-end
-})
-
-Tab:AddButton({
-	Name = "无",
-	Callback = function()
-loadstring(game:HttpGet("https://scriptblox.com/raw/NIGHTMARE-The-Mimic-Complete-Chapters-1687"))()
-end
-})
 
 local Tab = Window:MakeTab({
   Name = "无",
