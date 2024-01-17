@@ -393,34 +393,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/
 end
 })
 
-Tab:AddButton({
-	Name = "1",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/King%20Leagacy"))()
-end
-})
-
-Tab:AddButton({
-	Name = "2",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/master/legacy"))()
-end
-})
-
-Tab:AddButton({
-	Name = "3",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/kinglegacy.lua"))()
-end
-})
-
-Tab:AddButton({
-	Name = "4",
-	Callback = function()
-repeat wait() until game:IsLoaded()loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/Hyper/main/script.lua"))() 
-end
-})
-
 local Tab = Window:MakeTab({
 	Name = "5",
 	Icon = "rbxassetid://7229442422",
