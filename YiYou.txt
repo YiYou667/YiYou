@@ -387,14 +387,14 @@ local Tab = Window:MakeTab({
   })
 
 Tab:AddButton({
-	Name = "需要卡密死亡球",
+	Name = "死亡球",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/DeathBall.lua"))()  
 end
 })
 
 Tab:AddButton({
-	Name = "无",
+	Name = "1",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/King%20Leagacy"))()
 end
