@@ -387,9 +387,9 @@ local Tab = Window:MakeTab({
   })
 
 Tab:AddButton({
-	Name = "无",
+	Name = "需要卡密死亡球",
 	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/DeathBall.lua"))() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/DeathBall.lua"))()  
 end
 })
 
