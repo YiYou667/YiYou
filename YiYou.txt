@@ -1,28 +1,56 @@
-local CoreGui = game:GetService("StarterGui")
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+local LBLG = Instance.new("ScreenGui", getParent)
+local LBL = Instance.new("TextLabel", getParent)
+local player = game.Players.LocalPlayer
 
-CoreGui:SetCore("SendNotification", {
-    Title = "义幽",
-    Text = "正在加载（反挂机已开启）",
-    Duration = 5, 
-})
-print("反挂机开启")
-		local vu = game:GetService("VirtualUser")
-		game:GetService("Players").LocalPlayer.Idled:connect(function()
-		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-		   wait(1)
-		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-		end)
+LBLG.Name = "LBLG"
+LBLG.Parent = game.CoreGui
+LBLG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+LBLG.Enabled = true
+LBL.Name = "LBL"
+LBL.Parent = LBLG
+LBL.BackgroundColor3 = Color3.new(1, 1, 1)
+LBL.BackgroundTransparency = 1
+LBL.BorderColor3 = Color3.new(0, 0, 0)
+LBL.Position = UDim2.new(0.75,0,0.010,0)
+LBL.Size = UDim2.new(0, 133, 0, 30)
+LBL.Font = Enum.Font.GothamSemibold
+LBL.Text = "TextLabel"
+LBL.TextColor3 = Color3.new(1, 1, 1)
+LBL.TextScaled = true
+LBL.TextSize = 14
+LBL.TextWrapped = true
+LBL.Visible = true
+
+local FpsLabel = LBL
+local Heartbeat = game:GetService("RunService").Heartbeat
+local LastIteration, Start
+local FrameUpdateTable = { }
+
+local function HeartbeatUpdate()
+	LastIteration = tick()
+	for Index = #FrameUpdateTable, 1, -1 do
+		FrameUpdateTable[Index + 1] = (FrameUpdateTable[Index] >= LastIteration - 1) and FrameUpdateTable[Index] or nil
+	end
+	FrameUpdateTable[1] = LastIteration
+	local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
+	CurrentFPS = CurrentFPS - CurrentFPS % 1
+	FpsLabel.Text = ("北京:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
+end
+Start = tick()
+Heartbeat:Connect(HeartbeatUpdate)
 local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/SePpsSPZ'))()
-local Window = OrionLib:MakeWindow({Name = "义幽", HidePremium = false, SaveConfig = true,IntroText = "欢迎使用义幽", ConfigFolder = "欢迎使用义幽"})
+local Window = OrionLib:MakeWindow({Name = "义幽", HidePremium = false, SaveConfig = true,IntroText = "义幽爱撸管", ConfigFolder = "义幽爱撸管"})
 local about = Window:MakeTab({
     Name = "义幽",
     Icon = "rbxassetid://7229442422",
     PremiumOnly = false
 })
 
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "🤓"; Text ="撸义幽脚本"; Duration = 4; })
+
 about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
 about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
-about:AddParagraph("您当前服务器的ID"," "..game.GameId.."")
 local Tab = Window:MakeTab({
   Name = "通用",
   Icon = "rbxassetid://7229442422",
@@ -32,7 +60,7 @@ local Tab = Window:MakeTab({
  Tab:AddButton({
 	Name = "飞行",
 	Callback = function()
-loadstring(game:HttpGet('https://rentry.co/shadiao_yazifly/raw'))()
+loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/10545/%E4%B9%89%E5%B9%BD%E9%A3%9E%E5%A4%A9.txt?sign=ZcgdUoK-KLoUsMT55jNG4N2usOdX1K-MxEMTHRLja7o%3D%3A0",true))()
 end
 })
 
@@ -113,6 +141,13 @@ Tab:AddButton({
 	Name = "粘墙行走",
 	Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+end
+})
+
+Tab:AddButton({
+	Name = "通用透视(紫色)",
+	Callback = function()
+loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/10543/%E9%80%8F%E8%A7%86.txt?sign=9cbP41vTnBOQ8_h3hC8dpd9CCencXf5SXpvRCyazAIA%3D%3A0",true))()
 end
 })
 
@@ -213,9 +248,9 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "伪名说话",
+	Name = "玩家进入提示",
 	Callback = function()
-loadstring(game:HttpGet(('https://pastefy.ga/zCFEwaYq/raw'),true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 	end 
 })
 
@@ -273,7 +308,7 @@ mouse = game.Players.LocalPlayer:GetMouse() tool = Instance.new("Tool") tool.Req
 })
 
 Tab:AddButton({
-	Name = "Dex无用",
+	Name = "Dex",
 	Callback = function()
 loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
 end
@@ -298,6 +333,29 @@ Tab:AddButton({
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/Ohio"))()
   	end
 })
+Tab:AddButton({
+	Name = "ohio灵魂出窍飞天",
+	Callback = function()
+      	loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\115\99\114\105\112\116\115\46\118\105\115\117\114\117\115\46\100\101\118\47\111\104\105\111\47\115\111\117\114\99\101"))()
+  	end
+})
+
+Tab:AddButton({
+	Name = "ohio自动工作",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/ohio/main/Roblox232"))()
+  	end
+})
+
+Tab:AddLabel("指令如下（聊天框输入）")
+Tab:AddLabel("透开-透关 ---透视")
+Tab:AddLabel("追踪开-追踪关 ---子弹追踪")
+Tab:AddLabel("收钱开-收钱关 ---收集钱包")
+Tab:AddLabel("收物开-收物关 ---收集物品")
+Tab:AddLabel("抢取款机开-抢取款机关")
+Tab:AddLabel("抢银行开-抢银行关")
+Tab:AddLabel("穿墙开-穿墙关")
+Tab:AddLabel("拳击光环开-拳击光环关")
 
 local Tab = Window:MakeTab({
   Name = "脚本中心",
@@ -381,18 +439,34 @@ Tab:AddButton({
     end
 })  
 local Tab = Window:MakeTab({
-  Name = "死亡球",
+  Name = "刀刃球",
   Icon = "rbxassetid://7229442422",
   PremiumOnly = false
   })
-
 Tab:AddButton({
-	Name = "死亡球（需要卡密）",
+	Name = "剑客刀刃球",
+	Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/jiankeQWQ/jiankeV3/main/daorenqiu"))()
+end
+})
+Tab:AddButton({
+	Name = "刀刃球（需要卡密）",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/DeathBall.lua"))()  
 end
 })
-
+Tab:AddButton({
+	Name = "自动格挡",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()  
+end
+})
+Tab:AddButton({
+	Name = "刀刃球(英文)",
+	Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
+end
+})
 local Tab = Window:MakeTab({
 	Name = "冲刺模拟器（领ugc饰品）",
 	Icon = "rbxassetid://7229442422",
@@ -447,41 +521,56 @@ end
 })
 
 local Tab = Window:MakeTab({
-    Name = "无",
+    Name = "一路向西",
     Icon = "rbxassetid://7229442422",
     PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "无",
+	Name = "一路向西(超级枪)需要进群组",
 	Callback = function()
-     loadstring(game:HttpGet("https://pastebin.com/raw/Gae7YC84"))();
+     loadstring(game:GetObjects("rbxassetid://10040701935")[1].Source)()
   	end    
 })
 
 Tab:AddButton({
-	Name = "无",
+	Name = "一路向西范围",
 	Callback = function()
-     loadstring(game:HttpGet('https://raw.githubusercontent.com/LiverMods/xRawnder/main/HubMoblie'))()
+     loadstring(game:GetObjects("rbxassetid://10040722920")[1].Source)()
   	end    
 })
 
 Tab:AddButton({
-	Name = "无",
+	Name = "一路向西防摔",
 	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
+     loadstring(game:GetObjects("rbxassetid://10040712770")[1].Source)()
   	end    
 })
 
 Tab:AddButton({
-	Name = "无",
+	Name = "一路向西",
 	Callback = function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/h17s3/TIGERADMIN/main/TIGERADMINSCRIPTFREE'),true))()
+	loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/10542/%E4%B8%80%E8%B7%AF%E5%90%91%E8%A5%BF%E5%8A%9F%E8%83%BD.txt?sign=sNIUCE1Zbn-U9iYKaedRBXqwLEU5l7RaK0ZEb4mdBWU%3D%3A0",true))()
+	end
+})
+
+Tab:AddButton({
+	Name = "一路向西",
+	Callback = function()
+	loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/10541/%E4%B8%80%E8%B7%AF%E5%90%91%E8%A5%BF%E6%B1%89%E5%8C%96.txt?sign=wHc3Bf2txKEukPZFyLf5YYohL8io67-OjgLof1c7Rz0%3D%3A0",true))()
+	end
+})
+
+Tab:AddButton({
+	Name = "一路向西",
+	Callback = function()
+	
+	loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/10542/%E4%B8%80%E8%B7%AF%E5%90%91%E8%A5%BF%E5%8A%9F%E8%83%BD.txt?sign=sNIUCE1Zbn-U9iYKaedRBXqwLEU5l7RaK0ZEb4mdBWU%3D%3A0",true))()
 	end
 })
 
 local Tab = Window:MakeTab({
-  Name = "无",
+  Name = "",
   Icon = "rbxassetid://7229442422",
   PremiumOnly = false
   })
