@@ -803,28 +803,28 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-  Name = "",
+  Name = "ugc",
   Icon = "rbxassetid://7229442422",
   PremiumOnly = false
   })
   
 Tab:AddButton({
-	Name = "无",
+	Name = "ugc游戏不要动",
 	Callback = function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/longshulol/long/main/longshu/Ohio"))()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/spacex02/scripts/main/don't-move-24816"))()
   	end    
 })
 
 Tab:AddButton({
-	Name = "无",
+	Name = "ugc鼠标点击",
 	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Combat-Warriors/main/Script"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Alan0947383/Boom/main/Protected_1198219713372149.lua.txt",true))()
 	end
 })
 Tab:AddButton({
-	Name = "无",
+	Name = "Hello Kitty",
 	Callback = function()
-loadstring(game:HttpGet('https://ghostbin.co/paste/ctpa/raw'))()
+
 	end
 })
 
