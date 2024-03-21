@@ -393,8 +393,7 @@ local Tab = Window:MakeTab({
  Tab:AddButton({
 	Name = "飞行",
 	Callback = function()
-loadstring(game:HttpGet("http://cnmios.skyman.cloud/down.php/1bca4cd3912b65ed1f527816c4140e55.txt&YiYou",true))()
-end
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/YiYou667/YiYou/main/%E9%A3%9E%E8%A1%8C%E7%AD%89%E4%BA%8C%E6%94%B9.txt")))()
 })
 
 Tab:AddButton({
