@@ -1,3 +1,45 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "确认身份",
+    Text = "正在验证....",
+    Duration = 3, 
+})
+
+local a=tostring(game.Players.LocalPlayer.Character);
+
+if a=="YiYou667"then
+_G.she=true
+elseif a=="1"then
+_G.she=true
+elseif a=="用户名"then
+_G.she=true
+elseif a=="用户名"then
+_G.she=true
+elseif a=="用户名"then
+_G.she=true
+elseif a=="用户名"then
+_G.she=true
+elseif a=="用户名"then
+_G.she=true
+elseif a=="用户名"then
+_G.she=true
+elseif a=="用户名"then
+_G.she=true
+elseif a=="用户名"then
+_G.she=true
+elseif a=="用户名"then
+_G.she=true
+end
+if _G.she==true then
+    local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "验证结果",
+    Text = a.."验证身份成功",
+    Duration = 5,
+})
+
 local UserInputService = game:GetService("UserInputService")
 
 local function CreateGUI(title)
@@ -90,7 +132,7 @@ local function CreateGUI(title)
     agreeFrame.Size = UDim2.new(0.8, 0, 0.5, 0)
     agreeFrame.Position = UDim2.new(0.1, 0, 0.22, 0)
     agreeFrame.BackgroundColor3 = Color3.fromRGB(255, 215, 0)
-    agreeFrame.Text = "1.账号封禁,我概不负责.\n 2.合集二改公益使用.\n 3.求不要恶意抹黑,辱骂,造谣"
+    agreeFrame.Text = "1.义幽.\n 2.自用.\n 3.二改"
     agreeFrame.TextWrapped = true
 
     
@@ -207,7 +249,7 @@ local function HeartbeatUpdate()
 	FrameUpdateTable[1] = LastIteration
 	local CurrentFPS = (tick() - Start >= 1 and #FrameUpdateTable) or (#FrameUpdateTable / (tick() - Start))
 	CurrentFPS = CurrentFPS - CurrentFPS % 1
-	FpsLabel.Text = ("🐍精时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
+	FpsLabel.Text = ("月抛时长:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
 	FpsLabel.TextColor3 = Color3.fromRGB(255, 215, 0)  
 end
 Start = tick()
@@ -224,15 +266,28 @@ local Window = OrionLib:MakeWindow({
 })
 
 local about = Window:MakeTab({
-    Name = "吃精义幽",
+    Name = "义幽",
     Icon = "rbxassetid://7229442422",
     PremiumOnly = false
 })
 
-game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "🤓"; Text ="撸管🥵"; Duration = 20; })
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "🤓"; Text ="幽幽🐔🐔200米"; Duration = 20; })
 
-about:AddParagraph("您的用户名:"," "..game.Players.LocalPlayer.Name.."")
-about:AddParagraph("您的注入器:"," "..identifyexecutor().."")
+about:AddParagraph("名字:"," "..game.Players.LocalPlayer.Name.."")
+about:AddParagraph("注入器:"," "..identifyexecutor().."")
+local Tab =Window:MakeTab({
+	Name = "关于作者",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "复制作者微信",
+	Callback = function()
+     setclipboard("yymtkx1_1")
+  	end
+})
+
 local Tab = Window:MakeTab({
   Name = "通用",
   Icon = "rbxassetid://7229442422",
@@ -334,10 +389,18 @@ end
 })
 
 Tab:AddButton({
-	Name = "通用透视(紫色)",
-	Callback = function()
-loadstring(game:HttpGet("https://ayangwp.cn/api/v3/file/get/10543/%E9%80%8F%E8%A7%86.txt?sign=9cbP41vTnBOQ8_h3hC8dpd9CCencXf5SXpvRCyazAIA%3D%3A0",true))()
-end
+    Name = "通用透视(紫色)",
+    Callback = function()
+        local SoundService = game:GetService("SoundService")
+        local music = Instance.new("Sound")
+        music.SoundId = "rbxassetid://5409360995"
+        music.Volume = 1
+        music.Looped = false
+        music.PlayOnRemove = false
+
+        music.Parent = game.Workspace
+        music:Play()
+    end
 })
 
 Tab:AddToggle({
@@ -1340,5 +1403,18 @@ end
 
 end)
 end
-local myTitle = "😱" 
+local myTitle = "😅" 
 CreateGUI(myTitle)
+
+  wait(3) 
+  --你的脚本
+    else 
+setclipboard("yymtkx1_1")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "验证失败",
+    Text = "已复制义幽微信，联系开发者添加",
+    Duration = 15,
+})
+end
