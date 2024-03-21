@@ -393,7 +393,8 @@ local Tab = Window:MakeTab({
  Tab:AddButton({
 	Name = "飞行",
 	Callback = function()
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/YiYou667/YiYou/main/%E9%A3%9E%E8%A1%8C%E7%AD%89%E4%BA%8C%E6%94%B9.txt")))()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/YiYou667/YiYou/main/%E9%A3%9E%E8%A1%8C%E7%AD%89%E4%BA%8C%E6%94%B9.txt")))()
+        end
 })
 
 Tab:AddButton({
