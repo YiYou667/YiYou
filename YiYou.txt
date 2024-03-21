@@ -340,7 +340,37 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-    Name = "警报",
+    Name = "梦核",
+    Callback = function()
+        local SoundService = game:GetService("SoundService")
+        local music = Instance.new("Sound")
+        music.SoundId = "rbxassetid://9044728299"
+        music.Volume = 1
+        music.Looped = false
+        music.PlayOnRemove = false
+
+        music.Parent = game.Workspace
+        music:Play()
+    end
+})
+
+Tab:AddButton({
+    Name = "梦核2",
+    Callback = function()
+        local SoundService = game:GetService("SoundService")
+        local music = Instance.new("Sound")
+        music.SoundId = "rbxassetid://9041903070"
+        music.Volume = 1
+        music.Looped = false
+        music.PlayOnRemove = false
+
+        music.Parent = game.Workspace
+        music:Play()
+    end
+})
+
+Tab:AddButton({
+    Name = "无",
     Callback = function()
         local SoundService = game:GetService("SoundService")
         local music = Instance.new("Sound")
