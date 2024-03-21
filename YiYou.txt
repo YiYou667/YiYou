@@ -294,7 +294,9 @@ local Tab =Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddButton({
+Tab:AddLabel("开启必须等待播放结束才可关闭")
+Tab:AddLabel("播放会有延迟请勿着急")
+
     Name = "歌曲shiawase",
     Callback = function()
         local SoundService = game:GetService("SoundService")
