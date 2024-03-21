@@ -289,22 +289,21 @@ Tab:AddButton({
 })
 
 local Tab =Window:MakeTab({
-	Name = "音乐",
+	Name = "音乐说明",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
-Tab:AddLabel("指令如下（聊天框输入）")
-Tab:AddLabel("透开-透关 ---透视")
-Tab:AddLabel("追踪开-追踪关 ---子弹追踪")
-Tab:AddLabel("收钱开-收钱关 ---收集钱包")
-Tab:AddLabel("收物开-收物关 ---收集物品")
-Tab:AddLabel("抢取款机开-抢取款机关")
-Tab:AddLabel("抢银行开-抢银行关")
-Tab:AddLabel("穿墙开-穿墙关")
-Tab:AddLabel("拳击光环开-拳击光环关")
+Tab:AddLabel("播放完一首才可以关闭")
+Tab:AddLabel("加载较慢，请勿连续点击")
 
 local Tab = Window:MakeTab({
+
+local Tab =Window:MakeTab({
+	Name = "音乐播放",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
     Name = "歌曲shiawase",
     Callback = function()
