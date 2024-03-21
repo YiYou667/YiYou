@@ -292,7 +292,7 @@ local Tab = Window:MakeTab({
   Name = "通用",
   Icon = "rbxassetid://7229442422",
   PremiumOnly = false
-  })
+})
 
 Tab:AddButton({
     Name = "歌曲shiawase",
