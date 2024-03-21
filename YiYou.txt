@@ -294,6 +294,7 @@ local Tab =Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddButton({
     Name = "歌曲shiawase",
     Callback = function()
         local SoundService = game:GetService("SoundService")
