@@ -310,11 +310,26 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-    Name = "歌曲shiawase",
+    Name = "咖喱拌饭",
     Callback = function()
         local SoundService = game:GetService("SoundService")
         local music = Instance.new("Sound")
         music.SoundId = "rbxassetid://7341988724"
+        music.Volume = 1
+        music.Looped = false
+        music.PlayOnRemove = false
+
+        music.Parent = game.Workspace
+        music:Play()
+    end
+})
+
+Tab:AddButton({
+    Name = "警报",
+    Callback = function()
+        local SoundService = game:GetService("SoundService")
+        local music = Instance.new("Sound")
+        music.SoundId = "rbxassetid://9068077052"
         music.Volume = 1
         music.Looped = false
         music.PlayOnRemove = false
