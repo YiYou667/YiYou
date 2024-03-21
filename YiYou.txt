@@ -132,7 +132,7 @@ local function CreateGUI(title)
     agreeFrame.Size = UDim2.new(0.8, 0, 0.5, 0)
     agreeFrame.Position = UDim2.new(0.1, 0, 0.22, 0)
     agreeFrame.BackgroundColor3 = Color3.fromRGB(255, 215, 0)
-    agreeFrame.Text = "1.义幽.\n 2.自用.\n 3.二改"
+    agreeFrame.Text = "1.义幽.\n 2.自用.\n 3.111"
     agreeFrame.TextWrapped = true
 
     
@@ -389,7 +389,7 @@ end
 })
 
 Tab:AddButton({
-    Name = "通用透视(紫色)",
+    Name = "歌曲",
     Callback = function()
         local SoundService = game:GetService("SoundService")
         local music = Instance.new("Sound")
