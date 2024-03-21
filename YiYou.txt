@@ -314,7 +314,7 @@ Tab:AddButton({
     Callback = function()
         local SoundService = game:GetService("SoundService")
         local music = Instance.new("Sound")
-        music.SoundId = "rbxassetid://4305518891"
+        music.SoundId = "rbxassetid://7341988724"
         music.Volume = 1
         music.Looped = false
         music.PlayOnRemove = false
