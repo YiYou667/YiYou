@@ -294,16 +294,6 @@ local Tab =Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddLabel("播放完一首才可以关闭")
-Tab:AddLabel("加载较慢，请勿连续点击")
-
-local Tab = Window:MakeTab({
-
-	Name = "音乐播放",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
     Name = "歌曲shiawase",
     Callback = function()
         local SoundService = game:GetService("SoundService")
