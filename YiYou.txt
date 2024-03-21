@@ -299,7 +299,6 @@ Tab:AddLabel("加载较慢，请勿连续点击")
 
 local Tab = Window:MakeTab({
 
-local Tab =Window:MakeTab({
 	Name = "音乐播放",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
