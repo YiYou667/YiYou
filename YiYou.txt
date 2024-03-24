@@ -10,7 +10,7 @@ local a=tostring(game.Players.LocalPlayer.Character);
 
 if a=="YiYou667"then
 _G.she=true
-elseif a=="1"then
+elseif a=="ICoppercer"then
 _G.she=true
 elseif a=="用户名"then
 _G.she=true
