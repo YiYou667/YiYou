@@ -14,7 +14,7 @@ elseif a=="ICoppercer"then
 _G.she=true
 elseif a=="111undefined"then
 _G.she=true
-elseif a=="用户名"then
+elseif a=="yiyangdasn"then
 _G.she=true
 elseif a=="用户名"then
 _G.she=true
